@@ -1,2 +1,3 @@
-# Leetcode_Solutions_-Algo-DS-C-
+# Leetcode_Solutions_(Algo-DS)
+
 Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)

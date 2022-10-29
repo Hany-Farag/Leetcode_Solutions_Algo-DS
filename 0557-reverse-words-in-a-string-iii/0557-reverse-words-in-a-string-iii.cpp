@@ -1,7 +1,8 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        /*string temp,res;
+        /*  bruteforce solution 
+        string temp,res;
         for(auto i:s)
         {
             if(i==' ')
@@ -18,6 +19,7 @@ public:
         
         return res;*/
         
+        /*two pointer solution */ 
         int l=0,r=0,n=s.size();
         string res;
         for(int i=0;i<s.size();i++)

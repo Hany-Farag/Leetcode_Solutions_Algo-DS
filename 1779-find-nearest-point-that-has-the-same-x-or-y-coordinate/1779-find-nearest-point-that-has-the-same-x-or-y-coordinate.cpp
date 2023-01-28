@@ -9,7 +9,7 @@ public:
             if(i[0]==x||i[1]==y)
             {
                 cal=abs(x-i[0])+abs(y-i[1]);
-               if(mp[cal]==0)
+              /* if(mp[cal]==0)
                {
                    mp[cal]=ind+1;
                    //cout<<"this is mp first store "<<i[0]<< " "<<i[1]<<" "<<mp[cal]<<endl;
@@ -18,8 +18,10 @@ public:
                 {
                     mp[cal]=min(mp[cal],ind+1);
                     //cout<<"this is mp store "<<i[0]<< " "<<i[1]<<" "<<mp[cal]<<endl ;
-                }
+                }*/
+                mp[cal]=(!mp[cal]?mp[cal]=ind+1:mp[cal]=min(mp[cal],ind+1));
             }
+            
             ind++;
             
         }

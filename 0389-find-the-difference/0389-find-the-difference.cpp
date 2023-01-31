@@ -9,7 +9,7 @@ public:
         return t[t.size()-1];
         compllexity nlog(n)+nlog(n)+n=nlog(n)*/
     
-        map<char,int>mp;char res;
+        map<char,int>mp;
         for(auto i:s)mp[i]++;
         for(auto i:t)mp[i]++;
         for(auto i:mp)

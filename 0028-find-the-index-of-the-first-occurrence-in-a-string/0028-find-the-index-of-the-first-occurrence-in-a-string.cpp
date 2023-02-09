@@ -10,19 +10,20 @@ public:
         string s="";
         for(int i=0;i<sz2;i++)
         {
-            s+=haystack[i];
+            s+=haystack[i];         //O(m)
         }
         if(s==needle)return 0;
         
-        for(int i=sz2;i<sz1;i++)
+        for(int i=sz2;i<sz1;i++)   //O(n-m)
         {
-            s.erase(0,1);
-            s+=haystack[i];
+            s.erase(0,1);          //O(m)
+            s+=haystack[i];        //o(1)
             res_ind++;
             if(s==needle){
                 return res_ind;
             }
         }
+                                  //  =>//O(n-m)*O(m)=>O(n*m)
         return -1;
     }
 };
